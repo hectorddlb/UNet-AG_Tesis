@@ -1,0 +1,5 @@
+phantom_id,mode,phantom,b1_fwhm_lat_med_mm,b1_fwhm_ax_med_mm,b1_fwhm_n_wires,b1_fwhm_n_resolved_lat,b1_fwhm_n_resolved_ax,das_1pw_fwhm_lat_med_mm,das_1pw_fwhm_ax_med_mm,das_1pw_fwhm_n_wires,das_1pw_fwhm_n_resolved_lat,das_1pw_fwhm_n_resolved_ax,b1_cnr_db,b1_gcnr,b1_n_cysts,das_1pw_cnr_db,das_1pw_gcnr,das_1pw_n_cysts
+picmus_sim_resolution_distortion,sim,resolution_distortion,1.376151442527771,1.5247299671173096,20,20,20,1.3755942583084106,1.5223215818405151,20,20,20,,,,,,
+picmus_sim_contrast_speckle,sim,contrast_speckle,,,,,,,,,,,1.6914327256311035,0.5629189762070781,9,2.059821938843023,0.5825782456916735,9
+picmus_exp_resolution_distortion,exp,resolution_distortion,2.470736026763916,1.825357437133789,7,7,7,2.4680304527282715,1.8235868215560913,7,7,7,,,,,,
+picmus_exp_contrast_speckle,exp,contrast_speckle,,,,,,,,,,,-3.392986110660203,0.6471567927670712,2,-3.0428362001267923,0.5793214746359117,2

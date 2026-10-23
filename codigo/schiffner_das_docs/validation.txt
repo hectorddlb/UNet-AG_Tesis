@@ -1,0 +1,161 @@
+(.venv) PS C:\Users\hdavi\Downloads\schiffner_das_project> python picmus_beamform.py --picmus PICMUS --out results_picmus --skip-cpwc-75        
+======================================================================
+  Baseline 2 — Fd-F Beamforming on PICMUS
+======================================================================
+  PICMUS root : C:\Users\hdavi\Downloads\schiffner_das_project\PICMUS
+  Output      : C:\Users\hdavi\Downloads\schiffner_das_project\results_picmus
+  Quick mode  : False
+  z_chunk     : 32
+
+══════════════════════════════════════════════════════════════════════
+  Simulation — Resolution  (simu_resolution)
+══════════════════════════════════════════════════════════════════════
+  RF: (1527, 128, 75)  |  Grid: 387×609
+  f_s=20.832 MHz  pitch=300.0 µm  c=1540.0 m/s  t0=0 samples
+
+  ── A. F-number comparison (angle=0.0°) ──
+  DAS [+0°] done  (833.3 s)
+  DAS [+0°] done  (773.6 s)
+  DAS [+0°] done  (778.1 s)
+  → Saved: results_picmus\simu_resolution\A_fnumber_comparison.png
+
+  ── B. CPWC ladder (Fd-F, χ_lb=60°) ──
+  [1 PW] 1 angle(s): ['0.0°']
+  DAS [+0°] done  (775.1 s)
+  [3 PW] 3 angles: [-8.2°, ..., 8.2°]
+  DAS [-8°] done  (780.9 s)
+  DAS [+0°] done  (915.7 s)
+  DAS [+8°] done  (575.1 s)
+  [11 PW] 11 angles: [-16.0°, ..., 16.0°]
+  DAS [-16°] done  (610.5 s)
+  DAS [-13°] done  (606.3 s)
+  DAS [-10°] done  (613.8 s)
+  DAS [-6°] done  (613.3 s)
+  DAS [-3°] done  (608.5 s)
+  DAS [+0°] done  (607.3 s)
+  DAS [+3°] done  (616.6 s)
+  DAS [+6°] done  (616.1 s)
+  DAS [+10°] done  (607.5 s)
+  DAS [+13°] done  (607.1 s)
+  DAS [+16°] done  (603.2 s)
+  [75 PW] skipped (--skip-cpwc-75)
+  → Saved: results_picmus\simu_resolution\B_cpwc_ladder.png
+  → Saved tensor: results_picmus\simu_resolution\baseline2_fdf_1pw.pt
+
+  simu_resolution complete.
+
+══════════════════════════════════════════════════════════════════════
+  Simulation — Contrast  (simu_contrast)
+══════════════════════════════════════════════════════════════════════
+  RF: (1891, 128, 75)  |  Grid: 387×609
+  f_s=20.832 MHz  pitch=300.0 µm  c=1540.0 m/s  t0=0 samples
+
+  ── A. F-number comparison (angle=0.0°) ──
+  DAS [+0°] done  (739.8 s)
+  DAS [+0°] done  (676.5 s)
+  DAS [+0°] done  (689.7 s)
+  → Saved: results_picmus\simu_contrast\A_fnumber_comparison.png
+
+  ── B. CPWC ladder (Fd-F, χ_lb=60°) ──
+  [1 PW] 1 angle(s): ['0.0°']
+  DAS [+0°] done  (704.1 s)
+  [3 PW] 3 angles: [-8.2°, ..., 8.2°]
+  DAS [-8°] done  (712.7 s)
+  DAS [+0°] done  (706.7 s)
+  DAS [+8°] done  (719.4 s)
+  [11 PW] 11 angles: [-16.0°, ..., 16.0°]
+  DAS [-16°] done  (681.7 s)
+  DAS [-13°] done  (683.6 s)
+  DAS [-10°] done  (683.0 s)
+  DAS [-6°] done  (703.6 s)
+  DAS [-3°] done  (706.7 s)
+  DAS [+0°] done  (703.7 s)
+  DAS [+3°] done  (681.6 s)
+  DAS [+6°] done  (678.2 s)
+  DAS [+10°] done  (677.4 s)
+  DAS [+13°] done  (676.7 s)
+  DAS [+16°] done  (701.2 s)
+  [75 PW] skipped (--skip-cpwc-75)
+  → Saved: results_picmus\simu_contrast\B_cpwc_ladder.png
+  → Saved tensor: results_picmus\simu_contrast\baseline2_fdf_1pw.pt
+
+  simu_contrast complete.
+
+══════════════════════════════════════════════════════════════════════
+  Experimental — Resolution  (expe_resolution)
+══════════════════════════════════════════════════════════════════════
+  RF: (3328, 128, 75)  |  Grid: 387×609
+  f_s=20.832 MHz  pitch=300.0 µm  c=1540.0 m/s  t0=0 samples
+
+  ── A. F-number comparison (angle=0.0°) ──
+  DAS [+0°] done  (1141.6 s)
+  DAS [+0°] done  (1066.8 s)
+  DAS [+0°] done  (1085.0 s)
+  → Saved: results_picmus\expe_resolution\A_fnumber_comparison.png
+
+  ── B. CPWC ladder (Fd-F, χ_lb=60°) ──
+  [1 PW] 1 angle(s): ['0.0°']
+  DAS [+0°] done  (1186.4 s)
+  [3 PW] 3 angles: [-8.2°, ..., 8.2°]
+  DAS [-8°] done  (1338.3 s)
+  DAS [+0°] done  (1366.0 s)
+  DAS [+8°] done  (1353.2 s)
+  [11 PW] 11 angles: [-16.0°, ..., 16.0°]
+  DAS [-16°] done  (1356.3 s)
+  DAS [-13°] done  (1354.1 s)
+  DAS [-10°] done  (1336.2 s)
+  DAS [-6°] done  (1360.0 s)
+  DAS [-3°] done  (1044.9 s)
+  DAS [+0°] done  (1059.9 s)
+  DAS [+3°] done  (1035.1 s)
+  DAS [+6°] done  (1061.6 s)
+  DAS [+10°] done  (1066.8 s)
+  DAS [+13°] done  (1101.1 s)
+  DAS [+16°] done  (1104.8 s)
+  [75 PW] skipped (--skip-cpwc-75)
+  → Saved: results_picmus\expe_resolution\B_cpwc_ladder.png
+  → Saved tensor: results_picmus\expe_resolution\baseline2_fdf_1pw.pt
+
+  expe_resolution complete.
+
+══════════════════════════════════════════════════════════════════════
+  Experimental — Contrast  (expe_contrast)
+══════════════════════════════════════════════════════════════════════
+  RF: (3328, 128, 75)  |  Grid: 387×609
+  f_s=20.832 MHz  pitch=300.0 µm  c=1540.0 m/s  t0=0 samples
+
+  ── A. F-number comparison (angle=0.0°) ──
+  DAS [+0°] done  (1156.2 s)
+  DAS [+0°] done  (1176.4 s)
+  DAS [+0°] done  (1392.7 s)
+  → Saved: results_picmus\expe_contrast\A_fnumber_comparison.png
+
+  ── B. CPWC ladder (Fd-F, χ_lb=60°) ──
+  [1 PW] 1 angle(s): ['0.0°']
+  DAS [+0°] done  (1176.5 s)
+  [3 PW] 3 angles: [-8.2°, ..., 8.2°]
+  DAS [-8°] done  (1065.6 s)
+  DAS [+0°] done  (1339.1 s)
+  DAS [+8°] done  (1351.2 s)
+  [11 PW] 11 angles: [-16.0°, ..., 16.0°]
+  DAS [-16°] done  (1349.1 s)
+  DAS [-13°] done  (1344.4 s)
+  DAS [-10°] done  (1344.8 s)
+  DAS [-6°] done  (1335.7 s)
+  DAS [-3°] done  (1336.3 s)
+  DAS [+0°] done  (1342.8 s)
+  DAS [+3°] done  (1481.9 s)
+  DAS [+6°] done  (1522.0 s)
+  DAS [+10°] done  (1523.6 s)
+  DAS [+13°] done  (57079.7 s)
+  DAS [+16°] done  (1079.7 s)
+  [75 PW] skipped (--skip-cpwc-75)
+  → Saved: results_picmus\expe_contrast\B_cpwc_ladder.png
+  → Saved tensor: results_picmus\expe_contrast\baseline2_fdf_1pw.pt
+
+  expe_contrast complete.
+
+======================================================================
+  All done!  Total time: 34h 51m
+  Results in: C:\Users\hdavi\Downloads\schiffner_das_project\results_picmus
+======================================================================

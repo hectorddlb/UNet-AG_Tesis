@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.log
+*.out
+.pytest_cache/
+.venv/
+/resultados/
+*.egg-info/
+build/
+dist/
+# intermedios de la evaluación y artefactos que no se versionan
+evaluacion/npys/
+evaluacion/figuras/
+evaluacion/validacion_matlab/trabajo/
+metodos/04_drus/artefactos/

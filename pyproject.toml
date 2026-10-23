@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unetag-1pw-bmode"
+version = "1.0.0"
+description = "Reconstrucción B-mode de ultrasonido desde una sola onda plana con una UNet informada por el F-number dependiente de la frecuencia (y la réplica del método de difusión DRUS con el que se compara)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Héctor David De Lara Berumen" }]
+keywords = ["ultrasound", "beamforming", "plane-wave", "deep-learning", "b-mode"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+  "torch>=2.0",
+  "numpy>=1.24",
+  "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+picmus = ["h5py>=3.8"]            # leer ficheros RF de PICMUS
+figuras = ["matplotlib>=3.7"]      # salida en PNG
+drus   = ["h5py>=3.8", "matplotlib>=3.7"]   # réplica del método de difusión (orden `drus`)
+drus-entrenamiento = ["blobfile>=2.0", "tqdm>=4.65", "mkl"]   # ajuste fino del prior y SVD (MKL ILP64)
+todo   = ["h5py>=3.8", "matplotlib>=3.7", "blobfile>=2.0", "tqdm>=4.65"]
+
+[project.scripts]
+unetag = "unet_ag.cli:main"
+drus = "drus.cli:main"
+
+[project.urls]
+Repositorio = "https://github.com/hectorddlb/UNet-AG_Tesis"
+
+[tool.setuptools]
+package-dir = { "" = "codigo" }
+
+[tool.setuptools.packages.find]
+where = ["codigo"]
+include = ["unet_ag*", "schiffner_das*", "drus*", "guided_diffusion*"]
+
+[tool.setuptools.package-data]
+unet_ag = ["py.typed"]

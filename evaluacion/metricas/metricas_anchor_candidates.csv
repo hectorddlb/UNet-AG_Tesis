@@ -1,0 +1,5 @@
+method,seed,phantom,cnr_db,fwhm_ax_med_mm,fwhm_lat_med_mm,fwhm_n_resolved_ax,fwhm_n_resolved_lat,fwhm_n_wires,gcnr,n_cysts
+das1pw_adjoint,,sim_resolution,,1.5223215818405151,1.3755942583084106,20,20,20,,
+das1pw_adjoint,,sim_contrast,2.059821938843023,,,,,,0.5825782456916735,9
+das1pw_adjoint,,exp_resolution,,1.8235868215560913,2.4680304527282715,7,7,7,,
+das1pw_adjoint,,exp_contrast,-3.0428362001267923,,,,,,0.5793214746359117,2
